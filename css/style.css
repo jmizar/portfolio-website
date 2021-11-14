@@ -4,6 +4,25 @@ Primary color(name): #Refnum;
 Secondary color(name): #Refnum;
 Terciary color(name): #Refnum;
 */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 15px 0;
+  margin: 0px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.3);
+
+}
+
+main {
+  padding-top: 100px;
+}
+
 body {
 
   background-color: #FFFFFF;
@@ -42,12 +61,14 @@ img {
 }
 
 .logo {
-  width: 45px;
+  width: 30px;
+  float: left;
 }
 
 .social-logo {
   width: 80px;
 }
+
 /*
 Hyperlinks states
 */
@@ -106,4 +127,49 @@ Button class
 .button.contact:active {
   background-color: #000000;
   color: #ffffff;
+}
+
+/*
+================================
+ Layout Styling
+================================
+*/
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.center {
+  text-align: center; /* Add the center class to any HTML element to center text */
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+nav > ul > li > a {
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 400;
 }

@@ -33,28 +33,30 @@
   <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-</head>
+</head id="head">
 
 <!-- Header -->
 <header>
   <!-- Logo -->
-  <div>
-    <img src="img/logo.svg" alt="Portfolio Logo" class="logo">
+  <div class="container">
     <!-- Naigation -->
+    <img src="img/logo.svg" alt="Portfolio Logo" class="logo">
+
     <nav>
-      <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
+
   </div>
 </header>
 
 <!-- Body -->
 <main>
-  <div>
-    <!-- Hero Section -->
+  <!-- Hero Section -->
+  <div id="hero" class="container">
     <div>
       <h1>
         Hi, I'm Jaime Miralles
@@ -70,7 +72,7 @@
   </div>
 
   <!-- Work Section -->
-  <div>
+  <div id="work" class="container">
     <!-- Work Title -->
     <div>
       <h2>
@@ -79,7 +81,7 @@
     </div>
 
     <!-- Project 1 -->
-    <div>
+    <div class="row">
       <div>
         <picture>
           <source src="img/sportsia/sportsia-hero.png" media="(max-width:767px)">
@@ -96,10 +98,10 @@
         <a href="#" class="button">View Project</a>
       </div>
     </div>
-    <br>
+
 
     <!-- Project 2 -->
-    <div>
+    <div class="row">
       <div>
         <picture>
           <source src="img/etrip/etrip-hero.png" media="(max-width:767px)">
@@ -116,13 +118,13 @@
         <a href="etrip.html" class="button">View Project</a>
       </div>
     </div>
-    <br>
+
   </div>
 </main>
 
 <!-- Footer Section -->
 <footer id="contact">
-  <div>
+  <div class="container">
     <h2>
       Let's work together
     </h2>
