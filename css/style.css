@@ -149,6 +149,12 @@ Button class
   border-bottom: 1px solid #4a4a4a;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .center {
   text-align: center; /* Add the center class to any HTML element to center text */
 }
@@ -172,4 +178,107 @@ nav > ul > li > a {
   padding: 0 5px;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.intro {
+  max-width: 600px;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  .col-md-6{
+    width: 50%;
+  }
+
+  #about-page h3 {margin-top: 0;}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7{
+    width: 58.33%;
+  }
+  .col-lg-5{
+    width: 41.66%;
+  }
+  .container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  .col-lg-7{
+    width: 58.33%;
+  }
+  .col-lg-5{
+    width: 41.66%;
+  }
+  .container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+[class*="col-"]{
+  float:left;
+  padding-right: 30px;
+}
+
+/*
+CSS Animation Example
+*/
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*
+It can be combined like this:
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
