@@ -34,6 +34,8 @@
   <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
+  <script src="https://kit.fontawesome.com/bbf843cdc7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -41,16 +43,19 @@
   <header>
     <!-- Logo -->
     <div class="container">
-      <img src="img/logo.svg" alt="Portfolio Logo" class="logo">
-      <!-- Naigation -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a>
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <!-- Naigation -->
+        <img src="img/logo.svg" alt="Portfolio Logo" class="logo">
+        <nav>
+          <ul>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            <li><a href="index.html">Home</a>
+            <li><a href="index.html#work" onclick="menuToggle()">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -126,6 +131,9 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
 </body>

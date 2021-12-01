@@ -159,25 +159,42 @@ Button class
   text-align: center; /* Add the center class to any HTML element to center text */
 }
 
-nav {
-  float: right;
-}
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-nav li {
-  display: inline-block;
-  margin-left: 35px;
-}
-
 nav > ul > li > a {
   padding: 0 5px;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.navtoggle li:not(:first-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li:first-child{
+  float:right;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+/*Styling the hamburger menu display*/
+
+.navtoggle.responsive li:not(:first-child)  {
+  padding: 50px;
+  display: block;
+  justify-content: center;
+  display: flex;
 }
 
 .intro {
@@ -192,6 +209,23 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   .col-md-6{
     width: 50%;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 35px;
+  }
+
+  .navtoggle li:not(:first-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:first-child {
+    display: none;
   }
 
   #about-page h3 {margin-top: 0;}
@@ -212,6 +246,15 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  nav {
+    float: right;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 35px;
+  }
 }
 
 /* ==============================
@@ -229,7 +272,18 @@ X-large devices (1440px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  nav {
+    float: right;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 35px;
+  }
 }
+
+/* ============================== */
 
 [class*="col-"]{
   float:left;
