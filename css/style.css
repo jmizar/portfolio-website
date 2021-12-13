@@ -83,12 +83,11 @@ a{
 
 a:hover,
 a:focus {
-  color: #FF0011;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
-  color: #FF0011;
+  text-decoration: underline;
 }
 
 /*
@@ -298,7 +297,8 @@ X-large devices (1440px or larger)
 
 /*
 CSS Animation Example
-*/
+=================================
+
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
@@ -319,12 +319,16 @@ CSS Animation Example
   animation-timing-function: linear;
 }
 
+=================================*/
+
 /*
 It can be combined like this:
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 */
+
+/*
 
 @keyframes cloud-move {
   from {transform: translate(0,50px);}
@@ -343,3 +347,5 @@ It can be combined like this:
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+*/
