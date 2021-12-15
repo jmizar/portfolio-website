@@ -42,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -203,6 +203,7 @@ nav > ul > li > a {
 .intro {
   max-width: 600px;
   padding-bottom: 100px;
+
 }
 
 
